@@ -40,6 +40,16 @@ const SkinRandom = () => {
 
   return (
     <div>
+      <h1>Pick a Hero:</h1>
+      <h2>Current Heroes to choose from:</h2>
+      <ul className='flex flex-col justify-center items-center'>
+        {/* <li>Reaper</li> */}
+        <li>Zenyatta</li>
+        <li>Ashe</li>
+        {/* <li>Dva</li>
+        <li>Sigma</li>
+        <li>Soldier 76</li> */}
+      </ul>
       <form onSubmit={renderHeroInput} className='grid grid-cols-1'>
         <label htmlFor="">OW Hero</label>
         <input type="text" className='text-black' onChange={handleInput} />
