@@ -38,7 +38,7 @@ const SkinRandom = () => {
         break;
     }
   }
-
+  
   return (
     <div>
       <h1>Pick a Hero:</h1>
