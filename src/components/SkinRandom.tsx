@@ -32,6 +32,7 @@ const SkinRandom = () => {
       case "sigma":
         router.push(`/${heroinput}`)
         break;
+      case "soldier76":
       case "soldier 76":
         router.push(`/soldier_76`)
         break;
@@ -43,12 +44,12 @@ const SkinRandom = () => {
       <h1>Pick a Hero:</h1>
       <h2>Current Heroes to choose from:</h2>
       <ul className='flex flex-col justify-center items-center'>
-        {/* <li>Reaper</li> */}
+        <li>Reaper</li>
         <li>Zenyatta</li>
         <li>Ashe</li>
-        {/* <li>Dva</li>
+        <li>Dva</li>
         <li>Sigma</li>
-        <li>Soldier 76</li> */}
+        <li>Soldier 76</li>
       </ul>
       <form onSubmit={renderHeroInput} className='grid grid-cols-1'>
         <label htmlFor="">OW Hero</label>
