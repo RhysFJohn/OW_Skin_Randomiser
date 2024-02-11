@@ -1,7 +1,10 @@
+"use client"
+
 import { Navbar } from '@/components'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { usePathname } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +21,36 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const router = usePathname();
+  let bgBackground = ''
+
+  switch (router) {
+    case '/ashe':
+      bgBackground = 'bg-ashe'
+      break;
+    case '/dva':
+      bgBackground = 'bg-dva'
+      break;
+    case '/reaper':
+      bgBackground = 'bg-reaper'
+      break;
+    case '/sigma':
+      bgBackground = 'bg-sigma'
+      break;
+    case '/soldier_76':
+      bgBackground = 'bg-soldier76'
+      break;
+    case '/zenyatta':
+      bgBackground = 'bg-zenyatta'
+      break;
+    default:
+      bgBackground = 'bg-home'
+      break; 
+  }
+
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${bgBackground} bg-cover`}>
         <Navbar />
         {children}
       </body>

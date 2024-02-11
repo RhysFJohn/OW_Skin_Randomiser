@@ -11,6 +11,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'home': "url('https://res.cloudinary.com/dbxbxtfix/image/upload/v1707413045/OWBgs/OW2Bg_egqhoh.png')",
         'ashe':
           "url('https://res.cloudinary.com/dbxbxtfix/image/upload/v1689375279/OWBgs/1600_Ashe_jtlu8l.jpg')",
         'reaper':

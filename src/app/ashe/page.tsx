@@ -13,7 +13,7 @@ const Ashe = () => {
   const randomAsheSkin = Ashe_Skins[Math.floor(Math.random() * Ashe_Skins.length)]
   
   return (
-    <div className='flex min-h-screen flex-col items-center bg-ashe bg-cover'>
+    <div className='flex min-h-screen flex-col items-center'>
       <h1 className='text-3xl bold p-4'>Ashe</h1>
       <div className="grid md:grid-cols-2 sm:grid-cols-1 p-4">
         <div className="flex flex-col md:w-[450px] md:h-[450px] sm:w-[250px] sm:h-[250px] relative">
