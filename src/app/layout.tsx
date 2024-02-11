@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: {
     template: '%s | OW2 Skin Randomiser',
     default: 'OW2 Skin Randomiser',
